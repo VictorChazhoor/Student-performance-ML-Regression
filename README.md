@@ -1,5 +1,5 @@
 # Problem Statement 
-This data set consists of the marks secured by the students in Maths, Writing and Reading and background of the students from which they belong.
+This data set consists of the marks secured by the students in Maths, Writing and Reading and background of the students from which they belong. We are trying to predict **Writing Score** from **Reading Score**.
 ## Dataset
 
 The dataset used is the StudentsPerformance.csv(https://www.kaggle.com/spscientist/students-performance-in-exams). 
