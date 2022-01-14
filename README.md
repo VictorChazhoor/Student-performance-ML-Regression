@@ -17,14 +17,9 @@ The target variable is **Writing score**. **Writing Score** is scored by student
 
 ## Model(s) Used
 
-This needs to be a description of the model used and a brief overview of how it works in theory (e.g taken of a CNN Model): 
+**Linear Regression**: Linear Regression is a machine learning algorithm based on supervised learning. It performs a regression task. Regression models a target prediction value based on independent variables. It is mostly used for finding out the relationship between variables and forecasting. Linear regression performs the task to predict **Writing score**  based on **Reading Score**. So, this regression technique finds out a linear relationship between **Reading Score** and **Writing Score**.
 
-The network architecture used was a basic CNN model, with Max Pooling and ReLU Activation functions. Input images are resized to an optimal size and then fed into the **Convolutional layer**. These images are converted to their pixel values, which can be imagined as a three-dimensional matrix for the purpose of visualization. The **Convolutional layer** has a kernel. This kernel is generally a small matrix of specified kernel size mxnx3 (3 for RGB images). 
-<br>
+**Decision Tree**: Decision tree builds regression in the form of a tree structure. It breaks down a dataset into smaller and smaller subsets while at the same time an associated decision tree is incrementally developed. The final result is a tree with decision nodes (**Reading Score**) and leaf nodes (**Writing Score**).
 
-**Rectified Linear Unit (ReLU)** is the activation layer used in CNNs.The activation function is applied to increase non-linearity in the CNN. Images are made of different objects that are not linear to each other.
-
-
-**Max Pooling:** A limitation of the feature map output of Convolutional Layers is that they record the precise position of features in the input. This means that small movements in the position of the feature in the input image will result in a different feature map. This can happen with re-cropping, rotation, shifting, and other minor changes to the input image. A common approach to addressing this problem from signal processing is called down sampling. This is where a lower resolution version of an input signal is created that still contains the large or important structural elements, without the fine detail that may not be as useful to the task.
-
-
+## Future Work
+I could have added other variable in account to predict writing score using Multiple regression.
