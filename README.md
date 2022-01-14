@@ -1,21 +1,18 @@
 # Problem Statement 
-This dataset 
+This data set consists of the marks secured by the students in Maths, Writing and Reading and background of the students from which they belong.
 ## Dataset
 
-The dataset used is the [Name of the Dataset](Download link) from (source of download e.g Kaggle). 
+The dataset used is the StudentsPerformance.csv(https://www.kaggle.com/spscientist/students-performance-in-exams). 
 
-If the task is a regression task, then explain the target variable and give brief statistics.(e.g. Housing Prices)
+The target variable is **Writing score**. **Writing Score** is scored by students in writing test. So, it can be predicting if **Reading score** is given.
 
-**Target Variable: SalePrice**
+**Target Variable: Writing Score**
 <br>
+**Mean Writing Score:** 68.054
 <br>
-Sale Price refers to the selling price of the house.
+**Max Writing Score:** 10
 <br>
-**Mean Selling Price:** 121,000$
-<br>
-**Max Selling Price:** 1,000,000$
-<br>
-**Min Selling Price:** 45,000$
+**Min Writing Score:** 100
 
 
 ## Model(s) Used
@@ -30,5 +27,4 @@ The network architecture used was a basic CNN model, with Max Pooling and ReLU A
 
 **Max Pooling:** A limitation of the feature map output of Convolutional Layers is that they record the precise position of features in the input. This means that small movements in the position of the feature in the input image will result in a different feature map. This can happen with re-cropping, rotation, shifting, and other minor changes to the input image. A common approach to addressing this problem from signal processing is called down sampling. This is where a lower resolution version of an input signal is created that still contains the large or important structural elements, without the fine detail that may not be as useful to the task.
 
-## Future Work
-Good ideas or strategies that you were not able to implement which you think can help  improve performance.
+
