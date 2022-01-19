@@ -1,43 +1,25 @@
 # Problem Statement 
-This should be a brief description of the domain of your dataset (e.g. if it is the Titanic Dataset then write about the ship, the incident that happened, what you're trying to do with the data).
+This data set consists of the marks secured by the students in Maths, Writing and Reading and background of the students from which they belong. We are trying to predict **Writing Score** from **Reading Score**.
 ## Dataset
 
-The dataset used is the [Name of the Dataset](Download link) from (source of download e.g Kaggle). If the task is a classification task, then you must specify the number of classes and give a 1 line description of each class as follows(example of Iris Dataset). 
+The dataset used is the StudentsPerformance.csv(https://www.kaggle.com/spscientist/students-performance-in-exams). 
 
-The 3 class labels are:
-<br>
+The target variable is **Writing score**. **Writing Score** is scored by students in writing test. So, it can be predicting if **Reading score** is given.
 
-**1. Iris Setosa:** Given iris flower belongs to the Setosa species
+**Target Variable: Writing Score**
 <br>
-**2. Iris Virginica:** Given iris flower belongs to the Virginica species
+**Mean Writing Score:** 68.054
 <br>
-**3. Iris Versicolor:** Given iris flower belongs to the Versicolor species
-
-If the task is a regression task, then explain the target variable and give brief statistics.(e.g. Housing Prices)
-
-**Target Variable: SalePrice**
+**Max Writing Score:** 10
 <br>
-<br>
-Sale Price refers to the selling price of the house.
-<br>
-**Mean Selling Price:** 121,000$
-<br>
-**Max Selling Price:** 1,000,000$
-<br>
-**Min Selling Price:** 45,000$
+**Min Writing Score:** 100
 
 
 ## Model(s) Used
 
-This needs to be a description of the model used and a brief overview of how it works in theory (e.g taken of a CNN Model): 
+**Linear Regression**: Linear Regression is a machine learning algorithm based on supervised learning. It performs a regression task. Regression models a target prediction value based on independent variables. It is mostly used for finding out the relationship between variables and forecasting. Linear regression performs the task to predict **Writing score**  based on **Reading Score**. So, this regression technique finds out a linear relationship between **Reading Score** and **Writing Score**.
 
-The network architecture used was a basic CNN model, with Max Pooling and ReLU Activation functions. Input images are resized to an optimal size and then fed into the **Convolutional layer**. These images are converted to their pixel values, which can be imagined as a three-dimensional matrix for the purpose of visualization. The **Convolutional layer** has a kernel. This kernel is generally a small matrix of specified kernel size mxnx3 (3 for RGB images). 
-<br>
-
-**Rectified Linear Unit (ReLU)** is the activation layer used in CNNs.The activation function is applied to increase non-linearity in the CNN. Images are made of different objects that are not linear to each other.
-
-
-**Max Pooling:** A limitation of the feature map output of Convolutional Layers is that they record the precise position of features in the input. This means that small movements in the position of the feature in the input image will result in a different feature map. This can happen with re-cropping, rotation, shifting, and other minor changes to the input image. A common approach to addressing this problem from signal processing is called down sampling. This is where a lower resolution version of an input signal is created that still contains the large or important structural elements, without the fine detail that may not be as useful to the task.
+**Decision Tree**: Decision tree builds regression in the form of a tree structure. It breaks down a dataset into smaller and smaller subsets while at the same time an associated decision tree is incrementally developed. The final result is a tree with decision nodes (**Reading Score**) and leaf nodes (**Writing Score**).
 
 ## Future Work
-Good ideas or strategies that you were not able to implement which you think can help  improve performance.
+I could have added other variable in account to predict writing score using Multiple regression.
